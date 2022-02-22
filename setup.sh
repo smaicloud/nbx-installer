@@ -289,7 +289,6 @@ if [ "$?" -gt "0" ];
     echo -e "----------------------------------------------------------"
  exit 1
 fi
-clear
 }
 
 function update_summary {
