@@ -238,7 +238,7 @@ clear
 }
 
 function backup {
-git clone https://github.com/tom-ua/netbox-postgres-backup.git
+git clone https://github.com/smaicloud/nbx-postgres-backup.git
 chmod +x netbox-postgres-backup/pg_backup*.sh
 clear
 }
