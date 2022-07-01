@@ -6,4 +6,4 @@ All steps from the offical guide: https://netbox.readthedocs.io/en/stable/instal
 
 After the installation secure nginx with a certificate yourself!
 
-When you install, the PostgreSQL backup script will be downloaded too. https://github.com/tom-ua/netbox-postgres-backup
+When you install, the PostgreSQL backup script will be downloaded too. https://github.com/smaicloud/nbx-postgres-backup
