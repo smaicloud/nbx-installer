@@ -25,11 +25,11 @@ clear
 }
 
 function os_check {
- if [[ $(lsb_release -d) == *20.04* ]]; then
+ if [[ $(lsb_release -d) == *22.04* ]]; then
    UBUNTU_VERSION=20
 else
    echo -e "-----------------------------------------------------------------------"
-   echo -e "${RED}You are not running Ubuntu 20.04. Installation cancelled.${NC}"
+   echo -e "${RED}You are not running Ubuntu 22.04. Installation cancelled.${NC}"
    echo -e "-----------------------------------------------------------------------"
    exit 1
 fi
@@ -114,7 +114,7 @@ tar -xzf v${VERSION}.tar.gz -C /opt
 ln -s /opt/netbox-${VERSION}/ /opt/netbox
 adduser --system --group netbox
 chown --recursive netbox /opt/netbox/netbox/media/
-cp /opt/netbox/netbox/netbox/configuration.example.py /opt/netbox/netbox/netbox/configuration.py
+cp /opt/netbox/netbox/netbox/configuration_example.py /opt/netbox/netbox/netbox/configuration.py
 sed -i "s/ALLOWED_HOSTS = \[\]/ALLOWED_HOSTS = \['*'\]/" /opt/netbox/netbox/netbox/configuration.py
 sed -i "s/'USER': '',/'USER': 'netbox',/" /opt/netbox/netbox/netbox/configuration.py
 sed -i "0,/'PASSWORD':/ s/'PASSWORD': '',/'PASSWORD': '$POSTGRESPW',/" /opt/netbox/netbox/netbox/configuration.py
