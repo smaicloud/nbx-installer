@@ -1,5 +1,5 @@
 # netbox installer and updater for Ubuntu
-Shell script to install or update netbox on Ubuntu 20.04.
+Shell script to install or update netbox on Ubuntu 22.04.
 You can choose which version you will install or update.
 
 All steps from the offical guide: https://netbox.readthedocs.io/en/stable/installation/
